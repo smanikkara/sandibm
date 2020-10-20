@@ -1,0 +1,9 @@
+---
+- hosts: test 
+  become: True
+  tasks:
+    - name: Install packages
+      file:
+        path: "/opt/sandeepdevops.txt"
+        state: touch
+...
